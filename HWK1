@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+  int Faren = 0, i;
+  float Cels;
+  printf(" Farenheit      Celsius\n");
+  printf(" =========      =======\n");
+  for( i = 0; i < 31; i++)
+  {
+  Cels = (5.0/9.0) * (Faren-32);
+  printf("  %d           %.0f\n ", Faren, Cels);
+  Faren = Faren + 10;
+  }
+  return(0);
+}
